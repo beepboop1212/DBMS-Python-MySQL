@@ -1,0 +1,31 @@
+﻿create  database showroom;
+
+create table mobile (
+iceid            integer,
+icename      varchar(10),
+Company       varchar(10),
+price             int(11),
+publ           varchar(10),
+ qty               int(11),
+ d_o_delivery   date);
+
+
+
+
+create table customer
+(
+Cno       int(11),     
+cname       varchar(30), 
+mobno    varchar(10), 
+doo    date ,      
+shopADR    varchar(35));
+
+
+
+create table sales
+(
+custno             int(11),
+iceid             int(11),
+dopayment     date,
+amount            integer
+);
